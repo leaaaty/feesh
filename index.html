@@ -237,7 +237,7 @@ document.addEventListener("wheel",
 //var audio = new Audio('Audio/LazuLight_MoonHalo.mp3');
 const audio = WaveSurfer.create({ container: '#waveform', waveColor: 'violet', progressColor: 'purple', });
 audio.load('Audio/LazuLight_MoonHalo.mp3');
-const audio1;
+var audio1;
 	audio.volume = 0.3;
    audio.oncanplay = function() {
 	if (document.getElementById("checkbox-toggle").checked) this.play()
