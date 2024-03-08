@@ -244,8 +244,8 @@ const audio1;
    function myfunction(el) {    
 	 if (el.checked) {
 	   audio.load();
-	   //audio1 = new Audio('Audio/Feesh!.mp3');
-	   audio1 = WaveSurfer.create({ container: '#waveform', waveColor: 'violet', progressColor: 'purple', }); wavesurfer.load('Audio/Feesh!.mp3');
+	   audio1 = new Audio('Audio/Feesh!.mp3');
+	   //audio1 = WaveSurfer.create({ container: '#waveform', waveColor: 'violet', progressColor: 'purple', }); wavesurfer.load('Audio/Feesh!.mp3');
 	 } else {
 	   audio.pause(); //pause audio
 	   audio1 = new Audio();
