@@ -234,8 +234,9 @@ document.addEventListener("wheel",
 })();
 
 // show content when clicked
-var audio = new Audio('Audio/LazuLight_MoonHalo.mp3');
-var audio1;
+//var audio = new Audio('Audio/LazuLight_MoonHalo.mp3');
+const audio = WaveSurfer.create({ container: '#waveform', waveColor: 'violet', progressColor: 'purple', }); wavesurfer.load('Audio/LazuLight_MoonHalo.mp3');
+const audio1;
 	audio.volume = 0.3;
    audio.oncanplay = function() {
 	if (document.getElementById("checkbox-toggle").checked) this.play()
@@ -243,7 +244,8 @@ var audio1;
    function myfunction(el) {    
 	 if (el.checked) {
 	   audio.load();
-	   audio1 = new Audio('Audio/Feesh!.mp3');
+	   //audio1 = new Audio('Audio/Feesh!.mp3');
+	   audio1 = WaveSurfer.create({ container: '#waveform', waveColor: 'violet', progressColor: 'purple', }); wavesurfer.load('Audio/Feesh!.mp3');
 	 } else {
 	   audio.pause(); //pause audio
 	   audio1 = new Audio();
