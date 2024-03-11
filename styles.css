@@ -11,7 +11,7 @@ body{
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url("Image/Finana_Ryugu_Portrait.webp"), url("Image/iR8ZZp6J.png");
+  background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url("Image/Finana_Ryugu_Portrait.webp"), url("Image/bg.png");
   background-size: 50%, 50%, 50%, 130%;
   background-repeat: no-repeat;
   background-position: center;
