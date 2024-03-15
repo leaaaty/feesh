@@ -6,8 +6,8 @@
 body{
   cursor: url('ryuguard.png'), auto;
   margin: 0;
-  //background-image: url("Image/Finana_Birthday/IMG_1056.png");
-  background-color: black;
+  background-image: url("Image/Finana_Birthday/IMG_1056.png");
+  //background-color: black;
 }
 #parallax {
   position: relative;
@@ -340,24 +340,6 @@ svg {
 }
 .logo2 img:hover {
   transform: rotate(45deg) scale(1.1);
-}
-
-.ryulogo {
-  position: fixed;
-  bottom: 15vh;
-  left: 15vw;
-  z-index: 1;
-}
-.ryulogo img {
-  width: 20%;
-  filter: drop-shadow(5px 5px 10px black);
-  transform: rotate(0);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-.ryulogo img:hover {
-  transform: translate(0,-40px);
-  -webkit-animation: mover 0.5s;
-  animation: mover 0.5s;
 }
 
 .ryusprite1 {
