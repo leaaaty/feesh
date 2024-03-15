@@ -369,13 +369,11 @@ svg {
 .ryusprite1 img {
   width: 50%;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
-  transform: rotate(0);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .ryusprite2 {
   position: fixed;
-  transform: scaleX(-1);
   bottom: 25vh;
   right: 30vw;
   z-index: 1;
@@ -383,7 +381,7 @@ svg {
 .ryusprite2 img {
   width: 40%;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
-  transform: rotate(0);
+  transform: scaleX(-1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -396,7 +394,6 @@ svg {
 .ryusprite3 img {
   width: 40%;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
-  transform: rotate(0);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
