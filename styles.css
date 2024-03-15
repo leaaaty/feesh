@@ -368,8 +368,7 @@ svg {
 }
 .ryusprite1 img {
   width: 50%;
-  //filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
-  //filter: drop-shadow(0 0 10px linear-gradient(to bottom right, red, yellow));
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
   transform: rotate(0);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
