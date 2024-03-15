@@ -5,7 +5,8 @@
 body{
   cursor: url('ryuguard.png'), auto;
   margin: 0;
-  background-color: #79cfb8;
+  //background-color: #79cfb8;
+  background-image: url("Image/Finana_Birthday/IMG_1056.png");
 }
 #parallax {
   position: relative;
