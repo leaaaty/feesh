@@ -12,11 +12,11 @@ body{
 #parallax {
   position: relative;
   width: 100%;
-  height: 100vh;
-  //background-image: url("Image/Finana_Birthday/IMG_1047.png"), url("Image/Finana_Birthday/IMG_1049.png"), url("Image/Finana_Birthday/IMG_1050.png"), url("Image/Finana_Birthday/IMG_1051.png"), url("Image/Finana_Birthday/IMG_1052.png"), url("Image/Finana_Birthday/IMG_1053.png"), url("Image/Finana_Birthday/IMG_1054.png"), url("Image/Finana_Birthday/IMG_1055.png");
+  height: 100%;
+  background-image: url("Image/Finana_Birthday/IMG_1047.png"), url("Image/Finana_Birthday/IMG_1049.png"), url("Image/Finana_Birthday/IMG_1050.png"), url("Image/Finana_Birthday/IMG_1051.png"), url("Image/Finana_Birthday/IMG_1052.png"), url("Image/Finana_Birthday/IMG_1053.png"), url("Image/Finana_Birthday/IMG_1054.png"), url("Image/Finana_Birthday/IMG_1055.png");
   background-size: 70%,110%,110%,110%,110%,110%,110%,110%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-position: 50%;
 }
 h1 {
