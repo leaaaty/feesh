@@ -6,13 +6,14 @@
 body{
   cursor: url('ryuguard.png'), auto;
   margin: 0;
+  //background-image: linear-gradient(to bottom right, #51D2F8, #79cfb8);
   background-image: url("Image/Finana_Birthday/IMG_1056.png");
-  //background-color: black;
 }
 #parallax {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  //background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url("Image/finanabday23_big.png"), url("Image/no.jpg");
   background-image: url("Image/Finana_Birthday/IMG_1047.png"), url("Image/Finana_Birthday/IMG_1049.png"), url("Image/Finana_Birthday/IMG_1050.png"), url("Image/Finana_Birthday/IMG_1051.png"), url("Image/Finana_Birthday/IMG_1052.png"), url("Image/Finana_Birthday/IMG_1053.png"), url("Image/Finana_Birthday/IMG_1054.png"), url("Image/Finana_Birthday/IMG_1055.png");
   background-size: 70%,110%,110%,110%,110%,110%,110%,110%;
   background-repeat: no-repeat;
@@ -351,19 +352,21 @@ svg {
 .ryusprite1 img {
   width: 50%;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+  transform: rotate(0);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .ryusprite2 {
   position: fixed;
+  transform: scaleX(-1);
   bottom: 25vh;
   right: 30vw;
-  transform: scaleX(-1);
   z-index: 1;
 }
 .ryusprite2 img {
   width: 40%;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+  transform: rotate(0);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -376,6 +379,7 @@ svg {
 .ryusprite3 img {
   width: 40%;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+  transform: rotate(0);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -397,6 +401,7 @@ svg {
   -webkit-animation: mover 0.5s;
   animation: mover 0.5s;
 }
+
 @-webkit-keyframes mover {
 	0% { transform: translateY(0); }
 	100% { translate(0,-40px); }
@@ -443,10 +448,13 @@ svg {
 .credits-modal a{
 	justify-content: space-evenly;
 	cursor: pointer;
-	decoration: none;
 	color:#ccc;
-	font-size: 1.4rem;
+	font-size: 1rem;
+	font-weight: normal;
 	transition: all 0.3s ease;
+}
+.credits-modal a i{
+	font-size: 1.4rem;
 }
 .credits-modal a:hover .fa-twitter{
 	transform:translate3d(0,-10px,20px);
