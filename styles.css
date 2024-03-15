@@ -1,14 +1,13 @@
 * {
   //cursor: url('ryuguard2.png'), auto;
   text-decoration: none;
-  //background-color: #79cfb8;
 }
 
 body{
   cursor: url('ryuguard.png'), auto;
   margin: 0;
-  background-image: url("Image/Finana_Birthday/IMG_1056.png");
-  //background-color: #79cfb8;
+  //background-image: url("Image/Finana_Birthday/IMG_1056.png");
+  background-color: black;
 }
 #parallax {
   position: relative;
