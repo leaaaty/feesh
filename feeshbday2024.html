@@ -32,7 +32,7 @@ document.addEventListener("wheel",
     }, { passive: false } );
 </script>
 <div class="parallax" id="parallax">
-	<h4>Happy Birthday Finana</h4>
+	<h4>Happy Birthday<br/>Finana</h4>
 	
 	<div class="wrapper">
 	  <label class="switch" title="Click to play BGM!">
@@ -59,17 +59,27 @@ document.addEventListener("wheel",
 	<!-- Link to open the modal -->
 	<div class="ryusprite1" id="ryufeesh">
 		<a href="#ryuguard1" rel="modal:open">
-		 <img src="Image/ryuguardkano.png" alt="" /> 
+		 <img id="ryu-img1" src="Image/ryuguardkano.png" alt="" />
 		</a>
 	</div>
 	<div class="ryusprite2" id="ryufeesh">
-		<a href="#ryuguard1" rel="modal:open">
-		 <img src="Image/ryuguardkano.png" alt="" /> 
+		<a href="#video" rel="modal:open">
+		 <img id="ryu-img2" src="Image/ryuguardkano.png" alt="" />
 		</a>
 	</div>
 	<div class="ryusprite3" id="ryufeesh">
 		<a href="#ryuguard1" rel="modal:open">
-		 <img src="Image/cakekano.png" alt="" /> 
+		 <img id="ryu-img3" src="Image/cakekano.png" alt="" /> 
+		</a>
+	</div>
+	<div class="ryusprite4" id="ryufeesh">
+		<a href="#credits" rel="modal:open">
+		 <img id="ryu-img4" src="Image/ryuguardkano.png" alt="" /> 
+		</a>
+	</div>
+	<div class="ryusprite5" id="ryufeesh">
+		<a href="#credits" rel="modal:open">
+		 <img id="ryu-img5" src="Image/crown.png" alt="" /> 
 		</a>
 	</div>
 	
@@ -181,10 +191,11 @@ document.addEventListener("wheel",
 	<!-- Modal HTML embedded directly into document -->
 	<div id="credits" class="credits-modal modal">
 	  <h2>Website Credits</h2>
-	  <p>Discord Fanserver - <a href="https://discord.gg/finana" target="_blank" rel="noopener noreferrer" title="Finana Finclub">Finana Finclub <i class="fab fa-discord"></i></a></p>
-	  <p>Programming - <a href="https://x.com/leaaa_TY" target="_blank" rel="noopener noreferrer" title="Lea's Twitter(X)">Lea <i class="fab fa-twitter"></i></a></p>
-	  <p>Artwork - <a href="https://x.com/kano_n0" target="_blank" rel="noopener noreferrer" title="カノ³'s Twitter(X)">カノ³ <i class="fab fa-twitter"></i></a></p>
-	  <p>Finana Ryugu <a href="https://x.com/FinanaRyugu" target="_blank" rel="noopener noreferrer" title="Finana's Twitter(X)"><i class="fab fa-twitter"></i></a> <a href="https://www.youtube.com/@FinanaRyugu" target="_blank" rel="noopener noreferrer" title="Finana's Youtube Channel"><i class="fab fa-youtube"></i></a> <a href="https://www.twitch.tv/finanaryugu/" target="_blank" rel="noopener noreferrer" title="Finana's Twitch Channel"><i class="fab fa-twitch"></i></a></p>
+	  <p>Discord Fanserver - <a href="https://discord.gg/finana" target="_blank" rel="noopener noreferrer">Finana Finclub <i class="fab fa-discord"></i></a></p>
+	  <p>Programming - <a href="https://x.com/leaaa_TY" target="_blank" rel="noopener noreferrer">Lea <i class="fab fa-twitter"></i></a></p>
+	  <p>Artwork - <a href="https://x.com/kano_n0" target="_blank" rel="noopener noreferrer">カノ³ <i class="fab fa-twitter"></i></a></p>
+	  <p>Cursor Ryuguard - <a href="https://x.com/leaaa_TY" target="_blank" rel="noopener noreferrer">Lea <i class="fab fa-twitter"></i></a></p>
+	  <p>Finana Ryugu - <a href="https://x.com/FinanaRyugu" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> <a href="https://youtube.com/@FinanaRyugu" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> <a href="https://twitch.tv/finanaryugu/" target="_blank" rel="noopener noreferrer" ><i class="fab fa-twitch"></i></a></p>
 	  <p><br/>And all Ryuguards/gals!</p>
 	</div>
 	
@@ -230,8 +241,8 @@ document.addEventListener("wheel",
 		let _depth4 = `${50 - (_mouseX - _w) * 0.005}% ${50 - (_mouseY - _h) * 0.005}%`; /* finana */
 		let _depth5 = `${50 - (_mouseX - _w) * 0.03}% ${50 - (_mouseY - _h) * 0.03}%`; /* heart */
 		let _depth6 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`; /* confetti */
-		let _depth7 = `${50 - (_mouseX - _w) * 0.009}% ${50 - (_mouseY - _h) * 0.009}%`; /* ribbon */
-		let _depth8 = `${50 - (_mouseX - _w) * 0.001}% ${50 - (_mouseY - _h) * 0.001}%`; /* weewa */
+		let _depth7 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`; /* ribbon */
+		let _depth8 = `${50 - (_mouseX - _w) * 0.003}% ${50 - (_mouseY - _h) * 0.003}%`; /* weewa */
         let x = `${_depth8}, ${_depth7}, ${_depth6}, ${_depth5}, ${_depth4}, ${_depth3}, ${_depth2}, ${_depth1}`;
         console.log(x);
         elem.style.backgroundPosition = x;
@@ -240,25 +251,29 @@ document.addEventListener("wheel",
 })();
 
 // show content when clicked
-//var audio = new Audio('Audio/LazuLight_MoonHalo.mp3');
-var audio = new Audio('LazuLight_MoonHalo.mp3');
-//const audio = WaveSurfer.create({ container: '#waveform', waveColor: 'violet', progressColor: 'purple', });
-//audio.load('Audio/LazuLight_MoonHalo.mp3');
+var audio = new Audio('Audio/LazuLight_MoonHalo.mp3');
 var audio1;
-audio.volume = 0.3;
+	audio.volume = 0.3;
    audio.oncanplay = function() {
 	if (document.getElementById("checkbox-toggle").checked) this.play()
    }
    function myfunction(el) {    
 	 if (el.checked) {
 	   audio.load();
-	   //audio1 = new Audio('Audio/Feesh!.mp3');
-	   audio1 = new Audio('https://github.com/leaaaty/feesh/tree/main/Audio/Feesh!.mp3?raw=true');
-	   //audio1 = WaveSurfer.create({ container: '#waveform', waveColor: 'violet', progressColor: 'purple', });
-	   //audio1.load('Audio/Feesh!.mp3');
+	   audio1 = new Audio('Audio/Feesh!.mp3');
+	   $('#ryu-img1').attr('style','filter: drop-shadow(0 0 20px rgba(255,0,0,0.8));');
+	   $('#ryu-img2').attr('style','filter: drop-shadow(0 0 20px rgba(255,0,0,0.8));');
+	   $('#ryu-img3').attr('style','filter: drop-shadow(0 0 20px rgba(255,0,0,0.8));');
+	   $('#ryu-img4').attr('style','filter: drop-shadow(0 0 20px rgba(255,0,0,0.8));');
+	   $('#ryu-img5').attr('style','filter: drop-shadow(0 0 20px rgba(255,0,0,0.8));');
 	 } else {
 	   audio.pause(); //pause audio
 	   audio1 = new Audio();
+	   $('#ryu-img1').attr('style','filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));');
+	   $('#ryu-img2').attr('style','filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));');
+	   $('#ryu-img3').attr('style','filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));');
+	   $('#ryu-img4').attr('style','filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));');
+	   $('#ryu-img5').attr('style','filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));');
 	 }
    }
    audio.addEventListener('ended', function() {
@@ -272,6 +287,25 @@ $(document).ready(function(){
 		audio1.play();
 		});
 });
+
+// stop audio when video is play
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '390',
+      width: '640',
+      videoId: 'nVqAtKybW9N8hsFO',
+      events: {
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING) {
+      // code to stop the audio player should probably go here
+	  audio.pause(); //pause audio
+    }
+  }
 </script>
 
 </body>
