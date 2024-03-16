@@ -34,14 +34,16 @@ h1 {
 }
 h4 {
   position: absolute;
-  top: 13%;
+  top: -5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #000;
-  font-family: "Arial";
-  opacity: .8;
-  font-size: 38px;
+  color: #fff;
+  font-family:"Allison", cursive;
+  opacity: .7;
+  font-size: 80px;
   text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px #fff, 0 0 30px #CA60FF, 0 0 40px #CA60FF, 0 0 50px #CA60FF, 0 0 60px #CA60FF, 0 0 70px #CA60FF, 0 0 80px #CA60FF;
 }
 .parallex p {
   top: 15%;
