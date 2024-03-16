@@ -32,7 +32,7 @@ document.addEventListener("wheel",
     }, { passive: false } );
 </script>
 <div class="parallax" id="parallax">
-	<!--<h4>Happy Birthday Finana</h4>-->
+	<h4>Happy Birthday Finana</h4>
 	
 	<div class="wrapper">
 	  <label class="switch" title="Click to play BGM!">
@@ -272,25 +272,6 @@ $(document).ready(function(){
 		audio1.play();
 		});
 });
-
-// stop audio when video is play
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '390',
-      width: '640',
-      videoId: 'nVqAtKybW9N8hsFO',
-      events: {
-        'onStateChange': onPlayerStateChange
-      }
-    });
-  }
-
-  function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING) {
-      // code to stop the audio player should probably go here
-	  audio.pause(); //pause audio
-    }
-  }
 </script>
 
 </body>
