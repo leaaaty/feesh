@@ -256,16 +256,16 @@ document.addEventListener("wheel",
 })();
 
 // show content when clicked
-var audio = new Audio('Audio/LazuLight_MoonHalo.mp3');
+var audio = new Audio('LazuLight_MoonHalo.mp3');
 var audio1;
-	audio.volume = 0.3;
+audio.volume = 0.3;
    audio.oncanplay = function() {
 	if (document.getElementById("checkbox-toggle").checked) this.play()
    }
    function myfunction(el) {    
 	 if (el.checked) {
 	   audio.load();
-	   audio1 = new Audio('Audio/Feesh!.mp3');
+	   audio1 = new Audio('https://github.com/leaaaty/feesh/tree/main/Audio/Feesh!.mp3?raw=true');
 	   $('#ryu-img1').attr('style','filter: drop-shadow(0 0 20px rgba(255,0,0,0.8));');
 	   $('#ryu-img2').attr('style','filter: drop-shadow(0 0 20px rgba(255,0,0,0.8));');
 	   $('#ryu-img3').attr('style','filter: drop-shadow(0 0 20px rgba(255,0,0,0.8));');
