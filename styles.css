@@ -4,7 +4,7 @@
 }
 
 body{
-  cursor: url('ryuguard.png'), auto;
+  cursor: url('Image/ryuguard-cursor-40.png'), auto;
   margin: 0;
   //background-image: linear-gradient(to bottom right, #51D2F8, #79cfb8);
   background-image: url("Image/Finana_Birthday/IMG_1056.png");
@@ -14,7 +14,7 @@ body{
   width: 100%;
   height: 100vh;
   //background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url("Image/finanabday23_big.png"), url("Image/no.jpg");
-  background-image: url("Image/Finana_Birthday/IMG_1047.png"), url("Image/Finana_Birthday/IMG_1049.png"), url("Image/Finana_Birthday/IMG_1050.png"), url("Image/Finana_Birthday/IMG_1051.png"), url("Image/Finana_Birthday/IMG_1052.png"), url("Image/Finana_Birthday/IMG_1053.png"), url("Image/Finana_Birthday/IMG_1054.png"), url("Image/Finana_Birthday/IMG_1055.png");
+  background-image: url("Image/Finana_Birthday/IMG_1047.png"), url("Image/Finana_Birthday/IMG_1049.png"), url("Image/Finana_Birthday/IMG_1050.png"), url("Image/Finana_Birthday/IMG_1051.png"), url("Image/IMG_1052_nocrown.png"), url("Image/Finana_Birthday/IMG_1053.png"), url("Image/Finana_Birthday/IMG_1054.png"), url("Image/Finana_Birthday/IMG_1055.png");
   background-size: 70%,110%,110%,110%,110%,110%,110%,110%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -34,17 +34,20 @@ h1 {
 }
 h4 {
   position: absolute;
-  top: -5%;
-  left: 50%;
+  top: -3%;
+  right: -10%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-family:"Allison", cursive;
-  opacity: .7;
+  //font-family: "Mr De Haviland", cursive;
+  opacity: .6;
   font-size: 80px;
-  text-align: center;
-  letter-spacing: 2px;
+  text-align: right;
+  line-height: 90%;
+  letter-spacing: 1px;
   text-shadow: 0 0 20px #fff, 0 0 30px #CA60FF, 0 0 40px #CA60FF, 0 0 50px #CA60FF, 0 0 60px #CA60FF, 0 0 70px #CA60FF, 0 0 80px #CA60FF;
 }
+
 .parallex p {
   top: 15%;
   left: 50%;
@@ -135,7 +138,7 @@ h4 {
 	  }
 	  .fish {
 		position: absolute;
-		left: -25%;
+		left: -30%;
 		top: -10%;
 		transition: 1.5s all;
 		.body {
@@ -302,46 +305,19 @@ svg {
 /* ===== LOGO ===== */
 .logo {
   position: fixed;
-  top: 3vh;
-  right: 3vw;
-  z-index: 2;
+  bottom: 3vh;
+  left: 50%;
+  z-index: 1;
 }
+
 .logo img {
+  display:inline-block;
   width: 45px;
   transform: rotate(0);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .logo img:hover {
-  transform: rotate(45deg) scale(1.1);
-}
-
-.logo1 {
-  position: fixed;
-  top: 9vh;
-  right: 3vw;
-  z-index: 2;
-}
-.logo1 img {
-  width: 45px;
-  transform: rotate(0);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-.logo1 img:hover {
-  transform: rotate(45deg) scale(1.1);
-}
-
-.logo2 {
-  position: fixed;
-  top: 15vh;
-  right: 3vw;
-  z-index: 2;
-}
-.logo2 img {
-  width: 45px;
-  transform: rotate(0);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-.logo2 img:hover {
   transform: rotate(45deg) scale(1.1);
 }
 
@@ -350,6 +326,7 @@ svg {
   top: 15vh;
   left: 14vw;
   z-index: 1;
+  line-height: 0;
 }
 .ryusprite1 img {
   width: 50%;
@@ -374,7 +351,7 @@ svg {
 
 .ryusprite3 {
   position: fixed;
-  bottom: 25vh;
+  bottom: 20vh;
   right: -10vw;
   z-index: 1;
 }
@@ -387,18 +364,31 @@ svg {
 
 .ryusprite4 {
   position: fixed;
-  bottom: 25vh;
-  right: -10vw;
+  bottom: 10vh;
+  left: 15vw;
   z-index: 1;
 }
 .ryusprite4 img {
-  width: 40%;
+  width: 30%;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
   transform: rotate(0);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.ryusprite1 img:hover, .ryusprite2 img:hover, .ryusprite3 img:hover, .ryusprite4 img:hover {
+.ryusprite5 {
+  position: fixed;
+  top: 10vh;
+  right: -33vw;
+  z-index: 1;
+}
+.ryusprite5 img {
+  width: 10%;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+  transform: rotate(0);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.ryusprite1 img:hover, .ryusprite2 img:hover, .ryusprite3 img:hover, .ryusprite4 img:hover, .ryusprite5 img:hover {
   transform: translate(0,-20px);
   -webkit-animation: mover 0.5s;
   animation: mover 0.5s;
@@ -422,18 +412,16 @@ svg {
 	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
 	border-radius:15px;
 	margin:10px;
-	//display: flex;
 	justify-content: center;
 	align-items: center;
 	border-top:2px solid rgba(255,255,255,0.5);
 	border-left:2px solid rgba(255,255,255,0.5);
-	//transform: perspective(800px);
-	//filter: blur(8px);
 	opacity: 0.9;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 0;
+	padding-right: 0;
 	background-color: #258e70;
 	animation: fadeIn 1s;
+	text-align: center;
 }
 .credits-modal h2{
 	color:#f5f5f5;
