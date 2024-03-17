@@ -13,7 +13,6 @@ body{
   position: relative;
   width: 100%;
   height: 100vh;
-  //background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url("Image/finanabday23_big.png"), url("Image/no.jpg");
   background-image: url("Image/Finana_Birthday/IMG_1047.png"), url("Image/Finana_Birthday/IMG_1049.png"), url("Image/Finana_Birthday/IMG_1050.png"), url("Image/Finana_Birthday/IMG_1051.png"), url("Image/IMG_1052_nocrown.png"), url("Image/Finana_Birthday/IMG_1053.png"), url("Image/Finana_Birthday/IMG_1054.png"), url("Image/Finana_Birthday/IMG_1055.png");
   background-size: 70%,110%,110%,110%,110%,110%,110%,110%;
   background-repeat: no-repeat;
@@ -46,6 +45,9 @@ h4 {
   line-height: 90%;
   letter-spacing: 1px;
   text-shadow: 0 0 20px #fff, 0 0 30px #CA60FF, 0 0 40px #CA60FF, 0 0 50px #CA60FF, 0 0 60px #CA60FF, 0 0 70px #CA60FF, 0 0 80px #CA60FF;
+}
+a {
+  cursor: url("Image/ryuguard-cursor-pointer.png"), auto;
 }
 
 .parallex p {
@@ -109,7 +111,7 @@ h4 {
 	}
 	.slider {
 	  position: absolute;
-	  cursor: pointer;
+	  cursor: url("Image/ryuguard-cursor-pointer.png"), auto;
 	  top: 0;
 	  left: 0%;
 	  right: 0;
@@ -437,7 +439,6 @@ svg {
 }
 .credits-modal a{
 	justify-content: space-evenly;
-	cursor: pointer;
 	color:#ccc;
 	font-size: 1rem;
 	font-weight: normal;
