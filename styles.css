@@ -55,7 +55,7 @@ h4 {
   text-shadow: 0 0 20px #fff, 0 0 30px #CA60FF, 0 0 40px #CA60FF, 0 0 50px #CA60FF, 0 0 60px #CA60FF, 0 0 70px #CA60FF, 0 0 80px #CA60FF;
 }
 a {
-  cursor: url("Image/ryuguard-cursor-pointer-50.png"), auto;
+  cursor: url("Image/ryuguard-cursor-pointer-40.png"), auto;
 }
 
 .parallax p {
@@ -119,7 +119,7 @@ a {
 	}
 	.slider {
 	  position: absolute;
-	  cursor: url("Image/ryuguard-cursor-pointer-50.png"), auto;
+	  cursor: url("Image/ryuguard-cursor-pointer-40.png"), auto;
 	  top: 0;
 	  left: 0%;
 	  right: 0;
