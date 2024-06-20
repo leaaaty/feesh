@@ -33,9 +33,7 @@
 	  margin-top: -200px;
 	  margin-left: -200px;
 	  border-radius: 2px;
-	  //box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
 	  overflow: hidden;
-	  //background: #201c29;
 	  color: #fff;
 	  font-family: "Open Sans", Helvetica, sans-serif;
 	  -webkit-font-smoothing: antialiased;
@@ -111,7 +109,7 @@
 	}
 
 	.bracket.left {
-	  left: 50px;
+	  left: 10px;
 	}
 
 	.bracket.left:before {
@@ -140,7 +138,7 @@
 	}
 
 	.bracket.right {
-	  right: 50px;
+	  right: 10px;
 	}
 
 	.bracket.right:before {
@@ -186,7 +184,6 @@
 	  z-index: 7;
 	  width: 1000px;
 	  height: 80px;
-	  //background: #201c29;
 	  background: black;
 	  left: 0;
 	  -webkit-animation: reveal 0.4s ease-out 1.7s;
@@ -212,11 +209,11 @@
 	  text-align: center;
 	  left: 0;
 	  font-weight: 300;
-	  font-size: 2.5rem;
+	  font-size: 2.2rem;
 	  color: #ffffff;
 	  line-height: 30px;
 	  word-spacing: 0.7rem;
-	  text-transform: uppercase;
+	  /* text-transform: uppercase; */
 	}
 
 	.first-letter {
@@ -409,6 +406,16 @@
 		opacity: 1;
 	  }
 	}
+
+    #countdown {
+        font-size: 36px;
+        position: relative;
+        text-align: center;
+    }
+
+    a {
+        color: white;
+    }
 </style>
 </head>
 
@@ -418,11 +425,48 @@
 		<div class="line right"></div>
 		<div class="bracket left"></div>
 		<div class="bracket right"></div>
-		<div class="small top"><span class="first-letter"></span>What's a</div>
+		<div class="small top">#AncientFeesh2024</div>
 		<div class="big">FINANARYUGU.COM</div>
-		<div class="small bottom">Solar?<span class="first-letter"></span></div>
+		<div class="small bottom"><div id="countdown"></div></div>
 		<div class="hide top"></div>
 		<div class="hide bottom"></div>
 	</div>
+
+    <script>
+        function getCurrentTimeInMYT() {
+            var now = new Date();
+            var offset = now.getTimezoneOffset() * 60000; // Get timezone offset in milliseconds
+            var mytTime = now.getTime() + (offset) + (8 * 3600000); // UTC+8 in milliseconds
+            return new Date(mytTime);
+        }
+
+        var countDownDate = new Date("June 22, 2024 04:00:00 GMT+0800");
+
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+
+            // Get the current date and time in MYT
+            var now = getCurrentTimeInMYT().getTime();
+
+            // Find the distance between now and the countdown date
+            var distance = countDownDate.getTime() - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the countdown is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = '<a href="youtube.com">HBD FINANA</a>';
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
