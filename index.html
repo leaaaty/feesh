@@ -433,23 +433,17 @@
 	</div>
 
     <script>
-        function getCurrentTimeInMYT() {
-            var now = new Date();
-            var offset = now.getTimezoneOffset() * 60000; // Get timezone offset in milliseconds
-            var mytTime = now.getTime() + (offset) + (8 * 3600000); // UTC+8 in milliseconds
-            return new Date(mytTime);
-        }
-
-        var countDownDate = new Date("June 22, 2024 16:00:00 GMT+0800");
+        // Set the date we're counting down to in UTC
+        var countDownDate = new Date("June 21, 2024 20:00:00 UTC").getTime();
 
         // Update the countdown every 1 second
         var x = setInterval(function() {
 
-            // Get the current date and time in MYT
-            var now = getCurrentTimeInMYT().getTime();
+            // Get the current UTC time
+            var now = new Date().getTime();
 
             // Find the distance between now and the countdown date
-            var distance = countDownDate.getTime() - now;
+            var distance = countDownDate - now;
 
             // Time calculations for days, hours, minutes and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
