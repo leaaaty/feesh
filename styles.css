@@ -361,7 +361,7 @@ svg {
 /* MV Cover */
 .ryusprite3 {
   position: absolute;
-  bottom: 38vh;
+  bottom: 45vh;
   right: 1vw;
   z-index: 1;
 }
@@ -386,7 +386,21 @@ svg {
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.ryusprite1 img:hover, .ryusprite2 img:hover, .ryusprite3 img:hover, .ryusprite4 img:hover {
+/*feesh world*/
+.ryusprite5 {
+	position: absolute;
+  	bottom: 18vh;
+  	right: 5vw;
+  	z-index: 1;
+  }
+  .ryusprite5 img {
+	width: 53%;
+  	filter: drop-shadow(0 0 20px rgba(1, 37, 120,0.7));
+  	transform: rotate(0);
+  	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+.ryusprite1 img:hover, .ryusprite2 img:hover, .ryusprite3 img:hover, .ryusprite4 img:hover, .ryusprite5 img:hover {
   transform: translate(0,-20px);
   -webkit-animation: mover 0.5s;
   animation: mover 0.5s;
@@ -416,9 +430,10 @@ svg {
 	border-left:2px solid rgba(255,255,255,0.5);
 	padding-left: 0;
 	padding-right: 0;
-	background-color: #258e70;
-	background-image: url("Image/Ly0_Finana_art_transparent.png") no-repeat;
-	background-size: 50%;
+	background: linear-gradient(300deg, rgba(23, 91, 72, 0.8), rgba(49, 183, 145, 0.8));
+	/* background-color: #258e70; */
+	/* background-image: url("Image/Ly0_Finana_art_transparent.png") no-repeat; */
+	/* background-size: 50%; */
 	opacity: 0.8;
 	animation: fadeIn8 1s;
 	text-align: center;
@@ -469,10 +484,10 @@ svg {
 	transform:translate3d(0,-10px,20px);
 	color:#6441a5;
 }
-.credits-modal a:hover .fa-envelope{
+/* .credits-modal a:hover .fa-envelope{
 	transform:translate3d(0,-10px,20px);
 	color:#2554FF;
-}
+} */
 .credits-modal a:hover .fa-link{
 	transform:translate3d(0,-10px,20px);
 	color:#646464;
@@ -486,13 +501,9 @@ svg {
     font-style: normal;
 	font-size: small;
 }
-.credits-link {
-	font-family: "Sarala", sans-serif;
-	font-size: small;
-	text-decoration: underline;
-}
 .credits-link:hover {
-	color: red;
+	color:red;
+	cursor: url("Image/ryuguard-cursor-pointer-40.png"), auto;
 }
 
 @keyframes fadeIn {
@@ -529,9 +540,8 @@ svg {
 
 .video-modal{
 	position: relative;
-	min-width:800px;
-	min-height:600px;
-	padding-bottom:100px;
+	min-width:1200px;
+	min-height:700px;
 	text-align:center;
 	width:auto;
 	height:auto;
@@ -542,17 +552,33 @@ svg {
 	align-items: center;
 	border-top:2px solid rgba(255,255,255,0.5);
 	border-left:2px solid rgba(255,255,255,0.5);
-	opacity: 0.9;
-	background-color: transparent;
-	animation: fadeIn 1s;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	/* background-color: #258e70; */
+	opacity: 1;
+	animation: fadeIn1 1s;
+	background-image: url('Image/asset/finanacake1.png'), url('Image/BG1/IMG_1051.png'), url('Image/BG1/IMG_1053.png'), url('Image/BG1/IMG_1056.png'), linear-gradient(#e6f4ff, #79cfb8);
+	background-size: 100%, 110%, 130%, 110%, 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
-.video-modal-header{
-	position: absolute;
-	min-width:800px;
-	min-height:600px;
+.video-modal h2{
+	color:#f5f5f5;
+	font-size:2.5rem;
+	text-align: center;
+	font-family: 'Acme', sans-serif;
+}
+.video-modal p {
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.4);
+	color: whitesmoke;
+	font-size: 1rem;
+	text-shadow: 2px 2px #003b38;
+}
+
+.video2-modal{
+	position: relative;
+	min-width:1200px;
+	min-height:700px;
 	text-align:center;
 	width:auto;
 	height:auto;
@@ -561,23 +587,29 @@ svg {
 	margin:10px;
 	justify-content: center;
 	align-items: center;
-	opacity: 0.9;
-	background-color: #258e70;
-	top:-10px;
-	left:-10px;
+	border-top:2px solid rgba(255,255,255,0.5);
+	border-left:2px solid rgba(255,255,255,0.5);
+	/* background-color: #258e70; */
+	opacity: 1;
+	animation: fadeIn1 1s;
+	background-image: url('Image/asset/finanaplush.png'), url('Image/BG1/IMG_1051.png'), url('Image/BG1/IMG_1053.png'), url('Image/BG1/IMG_1056.png'), linear-gradient(#e6f4ff, #79cfb8);
+	background-size: 90%, 110%, 130%, 110%, 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
-.video-modal-content{
-	position: absolute;
-	width:auto;
-	height:auto;
-	top:20%;
-	left:10%;
-}
-.video-modal h2{
+.video2-modal h2{
 	color:#f5f5f5;
 	font-size:2.5rem;
 	text-align: center;
 	font-family: 'Acme', sans-serif;
+}
+.video2-modal p {
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.4);
+	color: whitesmoke;
+	font-size: 1rem;
+	text-shadow: 2px 2px #003b38;
 }
 
 .ryu-modal{
@@ -597,7 +629,7 @@ svg {
 	background-color: #258e70;
 	opacity: 1;
 	animation: fadeIn1 1s;
-	background-image: url('Image/BG1/finanabday23.png'), url('Image/BG1/IMG_1051.png'), url('Image/BG1/IMG_1053.png'), url('Image/BG1/IMG_1056.png'), linear-gradient(#e6f4ff, #79cfb8);
+	background-image: url('Image/finanabday23.png'), url('Image/BG1/IMG_1051.png'), url('Image/BG1/IMG_1053.png'), url('Image/BG1/IMG_1056.png'), linear-gradient(#e6f4ff, #79cfb8);
 	background-size: 110%, 110%, 130%, 110%, 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
