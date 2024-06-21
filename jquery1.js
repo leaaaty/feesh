@@ -24,6 +24,6 @@ var x = setInterval(function() {
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = '<a href="https://www.youtube.com/watch?v=2dH3-QHS-Kc">HBD FINANA</a>';
-        document.getElementById("enterwebsite").innerHTML = '<a href="https://finanaryugu.com"> \>> FINANAYRUGU.COM \<< </a>';
+        document.getElementById("enterwebsite").innerHTML = '<a href="https://finanaryugu.com/ancientfeesh2024"> \>> FINANAYRUGU.COM \<< </a>';
     }
 }, 1000);
