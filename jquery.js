@@ -48,6 +48,7 @@ function myfunction(el) {
 		$('#ryu-img2').attr('style','filter: drop-shadow(0 0 20px rgba(207, 220, 250,0.5));');
 		$('#ryu-img3').attr('style','filter: drop-shadow(0 0 20px rgba(207, 220, 250,0.5));');
 		$('#ryu-img4').attr('style','filter: drop-shadow(0 0 20px rgba(207, 220, 250,0.5));');
+		$('#ryu-img5').attr('style','filter: drop-shadow(0 0 20px rgba(207, 220, 250,0.5));');
 		
 	} else {
 		audio.pause(); //pause audio
@@ -56,6 +57,7 @@ function myfunction(el) {
 		$('#ryu-img2').attr('style','filter: drop-shadow(0 0 20px rgba(1, 37, 120,0.7));');
 		$('#ryu-img3').attr('style','filter: drop-shadow(0 0 20px rgba(1, 37, 120,0.7));');
 		$('#ryu-img4').attr('style','filter: drop-shadow(0 0 20px rgba(1, 37, 120,0.7));');
+		$('#ryu-img5').attr('style','filter: drop-shadow(0 0 20px rgba(1, 37, 120,0.7));');
 		
 		$('#parallax').css('background-image','url("Image/BG/Day/IMG_2002.png"), url("Image/BG/Day/IMG_2003.png"), url("Image/BG/Day/IMG_2008.png"), url("Image/BG/Day/IMG_2009.png"), url("Image/BG/Day/IMG_2070.png"), url("Image/BG/Day/IMG_2011.png"), url("Image/BG/Day/IMG_2012.png"), url("Image/BG/Day/IMG_2013.png"), url("Image/BG/Day/IMG_2014_1.png"), url("Image/BG/Day/IMG_2015.png"), url("Image/BG/Day/IMG_2016.png"), url("Image/BG/Day/IMG_2017.png"), url("Image/BG/Day/IMG_2018.png")');
 	}
