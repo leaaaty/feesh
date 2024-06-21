@@ -27,16 +27,16 @@
 })();
 
 // show content when clicked
-var audio = new Audio('Audio/LazuLight_MoonHalo.mp3');
+/*var audio = new Audio('Audio/LazuLight_MoonHalo.mp3');*/
 var audio1;
-audio.volume = 0.3;
+/*audio.volume = 0.3;*/
 	
 audio.oncanplay = function() {
 	if (document.getElementById("checkbox-toggle").checked) this.play()
 }
 function myfunction(el) {    
 	if (el.checked) {
-		audio.load();
+		/*audio.load();*/
 		audio1 = new Audio('Audio/bubblepop.MP3');
 		audio1.volume = 0.15;
 		
@@ -51,7 +51,7 @@ function myfunction(el) {
 		$('#ryu-img5').attr('style','filter: drop-shadow(0 0 20px rgba(207, 220, 250,0.5));');
 		
 	} else {
-		audio.pause(); //pause audio
+		/*audio.pause(); //pause audio */
 		audio1 = new Audio();
 		$('#ryu-img1').attr('style','filter: drop-shadow(0 0 20px rgba(1, 37, 120,0.7));');
 		$('#ryu-img2').attr('style','filter: drop-shadow(0 0 20px rgba(1, 37, 120,0.7));');
