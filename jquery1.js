@@ -1,5 +1,5 @@
 // Set the date we're counting down to in UTC
-var countDownDate = new Date("June 21, 2024 20:00:00 UTC").getTime();
+var countDownDate = new Date("June 21, 2024 05:00:00 UTC").getTime();
 
 // Update the countdown every 1 second
 var x = setInterval(function() {
