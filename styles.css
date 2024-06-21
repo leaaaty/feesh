@@ -629,7 +629,7 @@ svg {
 	background-color: #258e70;
 	opacity: 1;
 	animation: fadeIn1 1s;
-	background-image: url('Image/finanabday23.png'), url('Image/BG1/IMG_1051.png'), url('Image/BG1/IMG_1053.png'), url('Image/BG1/IMG_1056.png'), linear-gradient(#e6f4ff, #79cfb8);
+	background-image: url('Image/BG1/finanabday23.png'), url('Image/BG1/IMG_1051.png'), url('Image/BG1/IMG_1053.png'), url('Image/BG1/IMG_1056.png'), linear-gradient(#e6f4ff, #79cfb8);
 	background-size: 110%, 110%, 130%, 110%, 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
