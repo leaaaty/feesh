@@ -47,27 +47,6 @@
 
 <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="jquery.js"></script>
-
-<style>
-@media only screen and (max-width: 1080px) {  
-html, body {
-  display: none;
- }
-}
-
-html,
-body,
-.container {
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-</style>
 </head>
 
 <body>
@@ -81,7 +60,7 @@ document.addEventListener("wheel",
 </script>
 <div class="main" id="main">
 	<div class="mainbutton ryufeesh">
-		<a href="#" class="button"><b>ENTER</b></a>
+		<span class="button"><b>ENTER</b></span>
 	</div>
 	<div class="parallax day" id="parallax">
 		<!-- Button -->
@@ -105,24 +84,29 @@ document.addEventListener("wheel",
 			<div class="ryusprite-button-left">
 				<div class="ryusprite1 ryufeesh">
 					<a href="#video" rel="modal:open">
-					 <img id="ryu-img1" src="Image/BG/specialvid.png" alt="" />
+					 <img id="ryu-img1" src="Image/BG/specialvid.png" alt="Special Vid" />
 					</a>
 				</div>
 				<div class="ryusprite4 ryufeesh">
 					<a href="#credits" rel="modal:open">
-					 <img id="ryu-img4" src="Image/BG/credits.png" alt="" /> 
+					 <img id="ryu-img4" src="Image/BG/credits.png" alt="Credits" /> 
 					</a>
 				</div>
 			</div>
 			<div class="ryusprite-button-right">
 				<div class="ryusprite2 ryufeesh">
 					<a href="#ryuguard1" rel="modal:open">
-					 <img id="ryu-img2" src="Image/BG/bdaymsg.png" alt="" />
+					 <img id="ryu-img2" src="Image/BG/bdaymsg.png" alt="Birthday Messages" />
 					</a>
 				</div>
 				<div class="ryusprite3 ryufeesh">
 					<a href="#video2" rel="modal:open">
-					 <img id="ryu-img3" src="Image/BG/mvcover.png" alt="" /> 
+					 <img id="ryu-img3" src="Image/BG/mvcover.png" alt="MV Cover" /> 
+					</a>
+				</div>
+				<div class="ryusprite5 ryufeesh">
+					<a href="#ryuguard2" rel="modal:open">
+					 <img id="ryu-img5" src="Image/BG/feeshworld.png" alt="Feesh World" /> 
 					</a>
 				</div>
 			</div>
@@ -133,24 +117,29 @@ document.addEventListener("wheel",
 			<div class="ryu-modal-title">Birthday Messages</div>
 			<iframe class="iframeMsg" src="bday-messages.html" height="400px" width="950px"></iframe>
 		</div>
+
+		<div id="ryuguard2" class="ryu-modal modal">
+			<!-- <h2>Feesh World</h2> -->
+			<div class="ryu-modal-title">Birthday Messages</div>
+			<iframe class="iframeMsg" src="feesh-world.html" height="400px" width="950px"></iframe>
+		</div>
 		
 		<!-- CREDITS -->
 		<!-- Credits Modal -->
 		<div id="credits" class="credits-modal modal">
 		  <h2>Website Credits</h2>
-		  <p>Programming - <a href="https://x.com/leaaa_TY" target="_blank" rel="noopener noreferrer">Lea <i class="fab fa-twitter"></i></a></p>
-		  <p>Background, Button Artwork - <a href="https://x.com/kano_n0" target="_blank" rel="noopener noreferrer">カノ³ <i class="fab fa-twitter"></i></a></p>
-		  <p>Chibi Artwork, Website Icon - <a href="https://x.com/dory_dori_dora" target="_blank" rel="noopener noreferrer">Doriyama <i class="fab fa-twitter"></i></a></p>
-		  <p>Birthday Message Background - <a href="https://x.com/kano_n0" target="_blank" rel="noopener noreferrer">カノ³ <i class="fab fa-twitter"></i></a> & <a href="https://x.com/ly0572" target="_blank" rel="noopener noreferrer">Ly0 <i class="fab fa-twitter"></i></a></p>
+		  <p>Programming, Cursor, Website Design - <a href="https://x.com/leaaa_TY" target="_blank" rel="noopener noreferrer">Lea <i class="fab fa-twitter"></i></a></p>
+		  <p>Parallax Background, Button Artwork, Modal Background - <a href="https://x.com/kano_n0" target="_blank" rel="noopener noreferrer">カノ³ <i class="fab fa-twitter"></i></a></p>
+		  <p>Chibi Artwork, Website Icon, Website Logo - <a href="https://x.com/dory_dori_dora" target="_blank" rel="noopener noreferrer">Doriyama <i class="fab fa-twitter"></i></a></p>
 		  <p>Finana Finclub - <a href="https://discord.gg/finana" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a> <a href="https://x.com/FinanasFinClub" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></p>
 		  <p>Finana Ryugu - <a href="https://x.com/FinanaRyugu" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> <a href="https://youtube.com/@FinanaRyugu" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> <a href="https://twitch.tv/finanaryugu/" target="_blank" rel="noopener noreferrer" ><i class="fab fa-twitch"></i></a></p>
-		  <div class="credits-text">Special thanks to <a href="https://x.com/IronMonkey099" target="_blank" rel="noopener noreferrer" style="font-size: small;">IronMonkey</a> and <a href="https://x.com/dory_dori_dora" target="_blank" rel="noopener noreferrer" style="font-size: small;">Doriyama</a> their endless support in making this possible.
+		  <div class="credits-text">Special thanks to Doriyama and IronMonkey their endless support in making this possible.
 			<br/>And everyone who participated <i class="fa fa-heart" aria-hidden="true"></i></div><br/>
 		  <hr/>
 		  <h3>Disclaimer:</h3>
 		  <div class="credits-text">This fan website is dedicated to showcasing our gratitude and celebrating the 4th birthday of Finana Ryugu, the tropical mermaid from NIJISANJI EN. It serves as a fan-driven initiative to support Finana Ryugu. The site operates independently and is not affiliated with ANYCOLOR Inc. or any associated individual. Please refrain from making direct inquiries related to this project.
-		  <br/><br/>Should there be any request from NIJISANJI or its affiliated companies regarding this website,
-			<br/>please contact the sole owner of the domain via <a href="mailto:leaaaty@gmail.com" target="_blank" rel="noopener noreferrer" class="credits-link" style="font-size: small;text-decoration: underline;">email</a> or <a href="https://twitter.com/messages/compose?recipient_id=1642445770908663809" target="_blank" rel="noopener noreferrer" class="credits-link" style="font-size: small;text-decoration: underline;">DM</a>.
+		  	<br/><br/>Should there be any request from NIJISANJI or its affiliated companies regarding this website,
+			  <br/>please contact the sole owner of the domain via <span onclick="emailMe()" class="credits-link" style="font-size: small;text-decoration: underline;">email</span> or <span onclick="DmMe()" class="credits-link" style="font-size: small;text-decoration: underline;">DM</a>.
 		  </div>
 		  <br/>
 		</div>
@@ -161,26 +150,35 @@ document.addEventListener("wheel",
 		  <p><a class="twitter-timeline" href="https://twitter.com/FinanaRyugu" data-width="800"
 	  data-height="680" data-theme="dark" ></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 		</div>
-		
-		<!-- VIDEO -->
-		<!-- Video Modal -->
+
 		<div id="video" class="video-modal modal">
-		  <div class="video-modal-header">
-			<h2>A Video from Ryuguards</h2>
-		  </div>
-		  <div class="video-modal-content">
-			<iframe width="640" height="390" src="https://www.youtube.com/embed/jMx206Jht5M?si=WyMI1FxG6uVU-GVB" title="MV" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-			<p>Credits to Ryuguards</p>
-		  </div>
+			<div class="ryu-modal-title">Birthday Messages</div>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/MP70_l3Z2Kc?si=1yd-mfSlYYdidu3C" title="BM" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+			<hr/>
+			<p><b>Video Credits</b><br/>
+				<br/>The Ryuguards and Ryugals got together to share a special message to our favorite Feesh. We love you.
+				<br/>Organizer: IronMonkey
+				<br/>Background Art: Inky
+				<br/>BGM: LuceMarvell
+				<br/>Video: Batalig
+				<br/>Subtitles: Batalig & Lea
+				<br/>Messages: Ryuguards & Ryugals
+			</p>
 		</div>
-		<div id="video2" class="video-modal modal">
-		  <div class="video-modal-header">
-			<h2>MV Cover</h2>
-		  </div>
-		  <div class="video-modal-content">
-			<iframe width="640" height="390" src="https://www.youtube.com/embed/LYaJuyevUnU?si=RgLL8pBHRoWSgczg" title="Ryuguard's video" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-			<p>something something here</p>
-		  </div>
+
+		<div id="video2" class="video2-modal modal">
+			<div class="ryu-modal-title">MV Cover</div><br/>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/LYaJuyevUnU?si=RgLL8pBHRoWSgczg" title="MV" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+			<hr/>
+			<p><b>Video Credits</b><br/>
+				<br/>The Ryuguards and Ryugals got together to share a special message to our favorite FEESH.
+				<br/>Organizer: IronMonkey
+				<br/>Background Art: Inky
+				<br/>BGM: LuceMarvell
+				<br/>Video: Batalig
+				<br/>Subtitles: Batalig & Lea
+				<br/>Messages: Ryuguards & Ryugals
+			</p>
 		</div>
 	</div>
 </div>
@@ -189,10 +187,6 @@ document.addEventListener("wheel",
 <script src="jquery.js"></script>
 
 <script>
-// block phone view
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    getElementById('body').style.display = 'none';
-}
 // show content when button clicked
 $(document).ready(function(){
 	$('#main').show();
@@ -201,12 +195,26 @@ $(document).ready(function(){
 		$('.parallax').fadeIn(1000);
 		$(".ryusprite1").animate({ left: '7vw' }, 800);
 		$(".ryusprite4").animate({ left: '2vw' }, 800);
-		$(".ryusprite2").animate({ right: '8vw' }, 800);
-		$(".ryusprite3").animate({ right: '9vw' }, 800);
+		$(".ryusprite2").animate({ right: '10vw' }, 800);
+		$(".ryusprite3").animate({ right: '10vw' }, 800);
+		$(".ryusprite5").animate({ right: '0vw' }, 800);
 		
 		//$(".main").removeClass('main').removeClass('mainbutton');
 		});
 });
+
+function emailMe() {
+	var anchor = document.createElement('a');
+	anchor.href = "mailto:leaaaty@gmail.com";
+	anchor.target="_blank";
+	anchor.click();
+}
+function DmMe() {
+	var anchor = document.createElement('a');
+	anchor.href = "https://twitter.com/messages/compose?recipient_id=1642445770908663809";
+	anchor.target="_blank";
+	anchor.click();
+}
 </script>
 </body>
 </html>
