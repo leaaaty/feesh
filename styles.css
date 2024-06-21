@@ -2,6 +2,12 @@
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1080px) {  
+html, body {
+  display: none;
+ }
+}
+
 body{
   cursor: url('Image/ryuguard-cursor-50.png'), auto;
   margin: 0;
