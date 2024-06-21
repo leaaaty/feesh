@@ -682,3 +682,11 @@ input[type=checkbox]:checked ~ label > img {
 	padding:0px;
 	border:none;
 }
+
+.iframeMsg1 {
+	width:80vw;
+	height:82vh;
+	margin:0px;
+	padding:0px;
+	border:none;
+}
