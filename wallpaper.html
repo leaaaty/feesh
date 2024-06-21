@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Example</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Background color for the entire page */
+            cursor: url('Image/ryuguard-cursor-50.png'), auto;
+        }
+
+        .wallpaper-container {
+            position: relative; /* Needed for absolute positioning of button */
+            max-width: 100%;
+            max-height: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+        }
+
+        .wallpaper-container img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; /* Ensures the image covers the container */
+            filter: blur(8px); /* Initial blur */
+            transition: filter 0.5s ease; /* Smooth transition for filter change */
+        }
+
+        .wallpaper-container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 1; /* Ensure button appears above the image */
+        }
+
+        .wallpaper-container .btn:hover {
+            background-color: black;
+            cursor: url("Image/ryuguard-cursor-pointer-40.png"), auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wallpaper-container">
+        <img id="wallpaper" src="Image/wallpaper.png" alt="Wallpaper">
+        <button class="btn" onclick="removeBlurAndOpen()">Get</button>
+    </div>
+
+    <script>
+        function removeBlurAndOpen() {
+            var wallpaper = document.getElementById('wallpaper');
+            wallpaper.style.filter = 'none'; // Remove the blur filter
+
+            var btn = document.querySelector('.btn');
+            btn.style.display = 'none'; // Hide the button
+
+            // Open URL in new tab immediately
+            var url = 'https://youtu.be/3i_TLQsaAgU?si=--TRf9arjl2xh0M7'; // Replace with your desired URL
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
