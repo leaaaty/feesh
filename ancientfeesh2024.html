@@ -3,12 +3,6 @@
 <head>
 <meta charset='UTF-8'>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:creator" content="@leaaa_TY" />
-<meta name="twitter:site" content="@FinanaRyugu" />
-<meta name="twitter:title" content="#AncientFeesh2024" />
-<meta name="twitter:description" content="Happy Birthday Finana Ryugu" />
-<meta name="twitter:image" content="https://finanaryugu.com/Image/asset/Logo1.png" />
 <link rel="icon" type="image/x-icon" href="Image/Favicon.png">
 <title>Happy Birthday Finana!</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,8 +18,6 @@
 <link rel="stylesheet" href="mainbuttonstyle.css">
 
 <!-- Preload images -->
-<link rel="preload" href="Image/BG/Day/IMG_2011_clear.png" as="image">
-	
 <link rel="preload" href="Image/BG/Day/IMG_2002.png" as="image">
 <link rel="preload" href="Image/BG/Day/IMG_2003.png" as="image">
 <link rel="preload" href="Image/BG/Day/IMG_2008.png" as="image">
@@ -59,10 +51,6 @@
 
 <body>
 <script>
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    getElementById('body').style.display = 'none';
-}
-	
 document.addEventListener("wheel",
     function touchHandler(e) {
       if (e.ctrlKey) {
@@ -79,7 +67,7 @@ document.addEventListener("wheel",
 		<!-- Link to open the modal -->
 		<div class="ryusprite-button">
 			<div class="wrapper">
-			  <label class="switch" title="Click for Night Mode!">
+			  <label class="switch" title="Click to play BGM!">
 				<input type="checkbox" id="checkbox-toggle" onchange="myfunction(this)" />
 				<span class="slider">
 				  <div class="fish">
@@ -113,7 +101,7 @@ document.addEventListener("wheel",
 				</div>
 				<div class="ryusprite3 ryufeesh">
 					<a href="#video2" rel="modal:open">
-					 <img id="ryu-img3" src="Image/BG/mvcover.png" alt="MV Cover" /> 
+					 <img id="ryu-img3" src="Image/BG/secret.png" alt="MV Cover" /> 
 					</a>
 				</div>
 				<div class="ryusprite5 ryufeesh">
@@ -130,10 +118,10 @@ document.addEventListener("wheel",
 			<iframe class="iframeMsg" src="bday-messages.html" height="400px" width="950px"></iframe>
 		</div>
 
-		<div id="ryuguard2" class="ryu-modal modal">
+		<div id="ryuguard2" class="ryu2-modal modal">
 			<!-- <h2>Feesh World</h2> -->
 			<div class="ryu-modal-title">Feesh Around the World</div>
-			<iframe class="iframeMsg" src="feesh-world.html" height="400px" width="950px"></iframe>
+			<iframe class="iframeMsg1" src="feesh-world.html" height="400px" width="750px"></iframe>
 		</div>
 		
 		<!-- CREDITS -->
@@ -155,13 +143,20 @@ document.addEventListener("wheel",
 		  </div>
 		  <br/>
 		</div>
+		
+		<!-- TWEET -->
+		<!-- Tweet Modal -->
+		<div id="test" class="tweet-modal modal">
+		  <p><a class="twitter-timeline" href="https://twitter.com/FinanaRyugu" data-width="800"
+	  data-height="680" data-theme="dark" ></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+		</div>
 
 		<div id="video" class="video-modal modal">
-			<div class="ryu-modal-title">Special Video</div>
+			<div class="ryu-modal-title">Birthday Messages</div>
 			<iframe width="720" height="405" src="https://www.youtube.com/embed/MP70_l3Z2Kc?si=1yd-mfSlYYdidu3C" title="BM" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 			<hr/>
 			<p><b>Video Credits</b><br/>
-				<br/>The Ryuguards and Ryugals got together to share a special message to our favorite Feesh.
+				<br/>The Ryuguards and Ryugals got together to share a special message to our favorite Feesh. We love you.
 				<br/>Organizer: IronMonkey
 				<br/>Background Art: Inky
 				<br/>BGM: LuceMarvell
@@ -172,17 +167,14 @@ document.addEventListener("wheel",
 		</div>
 
 		<div id="video2" class="video2-modal modal">
-			<div class="ryu-modal-title">MV Cover</div><br/>
-			<iframe width="720" height="405" src="https://www.youtube.com/embed/LYaJuyevUnU?si=RgLL8pBHRoWSgczg" title="MV" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+			<div class="ryu-modal-title">????</div><br/>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/VBhkKgF_BP8?si=-1tqHdx5BSjbJw3A" title="MV" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 			<hr/>
 			<p><b>Video Credits</b><br/>
-				<br/>The Ryuguards and Ryugals got together to share a special message to our favorite FEESH.
-				<br/>Organizer: IronMonkey
-				<br/>Background Art: Inky
-				<br/>BGM: LuceMarvell
-				<br/>Video: Batalig
-				<br/>Subtitles: Batalig & Lea
-				<br/>Messages: Ryuguards & Ryugals
+				<br/>?????
+				<br/>????
+				<br/>????
+				<br/>????
 			</p>
 		</div>
 	</div>
