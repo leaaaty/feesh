@@ -7,6 +7,17 @@ body{
   margin: 0;
 }
 
+@media (max-width: 1016px) {
+    /* Styles for screens smaller than 768px (typical for mobile devices) */
+    body {
+        display: none; /* Hide entire body */
+    }
+    
+    .mobile-message {
+        display: block; /* Show a message for mobile users */
+    }
+}
+
 .parallax {
   position: relative;
   width: 100%;
