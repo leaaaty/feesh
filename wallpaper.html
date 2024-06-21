@@ -69,10 +69,23 @@
             var btn = document.querySelector('.btn');
             btn.style.display = 'none'; // Hide the button
 
+            enableContextMenu(); // After opening URL, enable context menu
+
             // Open URL in new tab immediately
             var url = 'https://youtu.be/3i_TLQsaAgU?si=--TRf9arjl2xh0M7'; // Replace with your desired URL
             window.open(url, '_blank');
         }
+
+        function enableContextMenu() {
+            window.removeEventListener('contextmenu', blockContextMenu);
+        }
+
+        function blockContextMenu(e) {
+            e.preventDefault();
+        }
+
+        // Initially block context menu
+        window.addEventListener('contextmenu', blockContextMenu);
     </script>
 </body>
 </html>
