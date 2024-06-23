@@ -771,7 +771,7 @@ input[type=checkbox]:checked ~ label > img {
 }
 
 .iframeMsg {
-	width:80vw;
+	width:auto;
 	height:82vh;
 	margin:0px;
 	padding:0px;
@@ -779,7 +779,7 @@ input[type=checkbox]:checked ~ label > img {
 }
 
 .iframeMsg1 {
-	width:80vw;
+	width:auto;
 	height:82vh;
 	margin:0px;
 	padding:0px;
