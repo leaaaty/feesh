@@ -29,7 +29,7 @@ const getBirthday = () => {
   
   // Text changing effect
   const textElement = document.getElementById("text");
-  const texts = ["Coming Soon", "finanaryugu.com"];
+  const texts = ["Coming Soon", "www.finanaryugu.com"];
   let currentTextIndex = 0;
   
   // Set the initial text immediately upon page load
