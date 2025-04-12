@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@leaaa_TY" />
+<meta name="twitter:site" content="@FinanaRyugu" />
+<meta name="twitter:title" content="#AncientFeesh2024" />
+<meta name="twitter:description" content="Happy Birthday Finana Ryugu" />
+<meta name="twitter:image" content="https://finanaryugu.com/Image/asset/Logo1.png" />
+<link rel="icon" type="image/x-icon" href="Image/Favicon.png">
+<link rel="icon" type="image/x-icon" href="Image/Favicon.png">
+<title>Happy Birthday Finana!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allison&family=Fira+Code&family=Acme&family=Chelsea+Market&family=Sarala&family=Candal:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="mainbuttonstyle.css">
+
+<!-- Preload images -->
+<link rel="preload" href="Image/BG/Day/IMG_2002.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2003.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2008.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2009.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2070.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2011.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2012.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2013.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2014_1.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2015.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2016.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2017.png" as="image">
+<link rel="preload" href="Image/BG/Day/IMG_2018.png" as="image">
+
+<link rel="preload" href="Image/BG/Night/IMG_2020.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2021.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2028.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2022.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2071.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2029.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2030.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2031.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2032_1.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2033.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2069.png" as="image">
+<link rel="preload" href="Image/BG/Night/IMG_2035.png" as="image">
+
+<script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery.js"></script>
+
+<style>
+@media (max-width: 1079px) {
+    /* Styles for screens smaller than 768px (typical for mobile devices) */
+    body {
+        display: none; /* Hide entire body */
+    }
+    
+    .mobile-message {
+        display: block; /* Show a message for mobile users */
+    }
+}	
+</style>
+</head>
+
+<body>
+<script>
+document.addEventListener("wheel",
+    function touchHandler(e) {
+      if (e.ctrlKey) {
+        e.preventDefault();
+      }
+    }, { passive: false } );
+</script>
+<div class="main" id="main">
+	<div class="mainbutton ryufeesh">
+		<span class="button"><b>ENTER</b></span>
+	</div>
+	<div class="parallax day" id="parallax">
+		<!-- Button -->
+		<!-- Link to open the modal -->
+		<div class="ryusprite-button">
+			<div class="wrapper">
+			  <label class="switch" title="Click to play BGM!">
+				<input type="checkbox" id="checkbox-toggle" onchange="myfunction(this)" />
+				<span class="slider">
+				  <div class="fish">
+					<div class="body">
+					</div>
+					<div class="eye"></div>
+					<div class="tail"></div>
+				  </div>
+				</span>
+				<span class="wave"> </span>
+			  </label>
+			</div>
+			
+			<div class="ryusprite-button-left">
+				<div class="ryusprite1 ryufeesh">
+					<a href="#video" rel="modal:open">
+					 <img id="ryu-img1" src="Image/BG/specialvid.png" alt="Special Vid" />
+					</a>
+				</div>
+				<div class="ryusprite4 ryufeesh">
+					<a href="#credits" rel="modal:open">
+					 <img id="ryu-img4" src="Image/BG/credits.png" alt="Credits" /> 
+					</a>
+				</div>
+			</div>
+			<div class="ryusprite-button-right">
+				<div class="ryusprite2 ryufeesh">
+					<a href="#ryuguard1" rel="modal:open">
+					 <img id="ryu-img2" src="Image/BG/bdaymsg.png" alt="Birthday Messages" />
+					</a>
+				</div>
+				<div class="ryusprite3 ryufeesh">
+					<a href="#video2" rel="modal:open">
+					 <img id="ryu-img3" src="Image/BG/secret.png" alt="MV Cover" /> 
+					</a>
+				</div>
+				<div class="ryusprite5 ryufeesh">
+					<a href="#ryuguard2" rel="modal:open">
+					 <img id="ryu-img5" src="Image/BG/feeshworld.png" alt="Feesh World" /> 
+					</a>
+				</div>
+				<div class="ryusprite6 ryufeesh">
+					<a href="#gift" rel="modal:open">
+					 <img id="ryu-img5" src="Image/asset/Logo.png" alt="Feesh World" /> 
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="ryuguard1" class="ryu-modal modal">
+			<!-- <h2>Birthday Messages</h2> -->
+			<div class="ryu-modal-title">Birthday Messages</div>
+			<iframe class="iframeMsg" src="bday-messages.html" height="400px" width="950px"></iframe>
+		</div>
+
+		<div id="ryuguard2" class="ryu2-modal modal">
+			<!-- <h2>Feesh World</h2> -->
+			<div class="ryu-modal-title">Feesh Around the World</div>
+			<iframe class="iframeMsg1" src="feesh-world.html" height="400px" width="750px"></iframe>
+		</div>
+
+		<div id="gift" class="gift-modal modal">
+			<div class="gift-modal-title">Thank You</div>
+			<iframe width="1000" height="563" style="border:none;" src="wallpaper.html"></iframe>
+			<p>
+				Here's a free Finana wallpaper for everyone as a thank you.
+				<br/><span style="font-size: small;">(You'll be redirected to Tsunami MV to unblur the wallpaper)</span>
+				<br/><br/>Wallpaper credit: nekneknek</a>
+			</p>
+		</div>
+		
+		<!-- CREDITS -->
+		<!-- Credits Modal -->
+		<div id="credits" class="credits-modal modal">
+		  <h2>Website Credits</h2>
+		  <p>Programming, Cursor, Website Design - <a href="https://x.com/leaaa_TY" target="_blank" rel="noopener noreferrer">Lea <i class="fab fa-twitter"></i></a></p>
+		  <p>Parallax Background, Button Artwork, Modal Background - <a href="https://x.com/kano_n0" target="_blank" rel="noopener noreferrer">カノ³ <i class="fab fa-twitter"></i></a></p>
+		  <p>Chibi Artwork, Website Icon, Website Logo - <a href="https://x.com/dory_dori_dora" target="_blank" rel="noopener noreferrer">Doriyama <i class="fab fa-twitter"></i></a></p>
+		  <p>Finana Wallpaper - <a href="https://x.com/mu_ank_" target="_blank" rel="noopener noreferrer">nekneknek <i class="fab fa-twitter"></i></a></p>
+		  <p>Finana Finclub - <a href="https://discord.gg/finana" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a> <a href="https://x.com/FinanasFinClub" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></p>
+		  <p>Finana Ryugu - <a href="https://x.com/FinanaRyugu" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> <a href="https://youtube.com/@FinanaRyugu" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a> <a href="https://twitch.tv/finanaryugu/" target="_blank" rel="noopener noreferrer" ><i class="fab fa-twitch"></i></a></p>
+		  <div class="credits-text">Special thanks to Doriyama and IronMonkey for their endless support in making this possible.
+			<br/>And everyone who participated <i class="fa fa-heart" aria-hidden="true"></i></div><br/>
+		  <hr/>
+		  <h3>Disclaimer:</h3>
+		  <div class="credits-text">This fan website is dedicated to showcasing our gratitude and celebrating the 4th birthday of Finana Ryugu, the tropical mermaid from NIJISANJI EN. It serves as a fan-driven initiative to support Finana Ryugu. The site operates independently and is not affiliated with ANYCOLOR Inc. or any associated individual. Please refrain from making direct inquiries related to this project.
+		  	<br/><br/>Should there be any request from NIJISANJI or its affiliated companies regarding this website,
+			  <br/>please contact the sole owner of the domain via <span onclick="emailMe()" class="credits-link" style="font-size: small;text-decoration: underline;">email</span> or <span onclick="DmMe()" class="credits-link" style="font-size: small;text-decoration: underline;">DM</a>.
+		  </div>
+		  <br/>
+		</div>
+
+		<div id="video" class="video-modal modal">
+			<div class="ryu-modal-title">Special Video</div>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/MP70_l3Z2Kc?si=1yd-mfSlYYdidu3C" title="BM" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+			<hr/>
+			<p><b>Video Credits</b><br/>
+				<br/>The Ryuguards and Ryugals got together to share a special message to our favorite Feesh. We love you.
+				<br/>Organizer: IronMonkey
+				<br/>Background Art: Inky
+				<br/>BGM: LuceMarvell
+				<br/>Video: Batalig
+				<br/>Subtitles: Batalig & Lea
+				<br/>Messages: Ryuguards & Ryugals
+			</p>
+		</div>
+
+		<div id="video2" class="video2-modal modal">
+			<div class="ryu-modal-title">????</div><br/>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/VBhkKgF_BP8?si=-1tqHdx5BSjbJw3A" title="MV" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+			<hr/>
+			<p><b>Video Credits</b><br/>
+				<br/>?????
+				<br/>????
+				<br/>????
+				<br/>????
+			</p>
+		</div>
+	</div>
+</div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="jquery.js"></script>
+
+<script>
+// show content when button clicked
+$(document).ready(function(){
+	$('#main').show();
+	$(".button").click(function(){
+		$('.mainbutton').fadeOut(1000);
+		$('.parallax').fadeIn(1000);
+		$(".ryusprite1").animate({ left: '7vw' }, 800);
+		$(".ryusprite4").animate({ left: '2vw' }, 800);
+		$(".ryusprite2").animate({ right: '10vw' }, 800);
+		$(".ryusprite3").animate({ right: '10vw' }, 800);
+		$(".ryusprite5").animate({ right: '0vw' }, 800);
+		
+		//$(".main").removeClass('main').removeClass('mainbutton');
+		});
+});
+
+function emailMe() {
+	var anchor = document.createElement('a');
+	anchor.href = "mailto:leaaaty@gmail.com";
+	anchor.target="_blank";
+	anchor.click();
+}
+function DmMe() {
+	var anchor = document.createElement('a');
+	anchor.href = "https://twitter.com/messages/compose?recipient_id=1642445770908663809";
+	anchor.target="_blank";
+	anchor.click();
+}
+</script>
+</body>
+</html>
